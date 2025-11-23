@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Menu from './Menu';
 import Cart from './Cart';
 import Checkout from './Checkout';
-import { fetchMenu } from '../../frontend_api_stub' /* replaced at build-time by real api.js */;
+import api from "./services/frontend_api_stub";
 
 export default function CustomerHome(){
   const [menu, setMenu] = useState([]);
